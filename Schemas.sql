@@ -7,12 +7,6 @@ DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS city;
 
--- Import Rules
--- 1st import to city
--- 2nd import to products
--- 3rd import to customers
--- 4th import to sales
-
 
 CREATE TABLE city
 (
@@ -52,7 +46,6 @@ CREATE TABLE sales
 	CONSTRAINT fk_customers FOREIGN KEY (customer_id) REFERENCES customers(customer_id) 
 );
 
--- END of SCHEMAS
 
 
 
